@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-light: #4cc9f0;
+  --color-brand-primary: #4361ee;
+  --color-brand-deep: #3a0ca3;
+  --color-brand-navy: #03045e;
+  --color-brand-gray: #f8f9fa;
+  
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-display: "Outfit", "Inter", sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-white text-brand-navy antialiased;
+  }
+}
+
+.glass {
+  @apply bg-white/70 backdrop-blur-md border border-white/20;
+}
+
+.glass-dark {
+  @apply bg-brand-navy/80 backdrop-blur-lg border border-white/10;
+}
+
+.hover-lift {
+  @apply transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl;
+}
+
+.hover-zoom {
+  @apply overflow-hidden;
+}
+
+.hover-zoom img {
+  @apply transition-transform duration-700 hover:scale-110;
+}
+
+.btn-premium {
+  @apply relative overflow-hidden transition-all duration-300 hover:scale-105 active:scale-95 hover:shadow-xl hover:shadow-brand-primary/30;
+}
+
+.btn-premium::after {
+  content: '';
+  @apply absolute inset-0 bg-white/20 translate-x-[-100%] transition-transform duration-500 skew-x-[-20deg];
+}
+
+.btn-premium:hover::after {
+  @apply translate-x-[150%];
+}
+
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-linear-to-r from-brand-light to-brand-deep;
+}
+
+.bg-brand-gradient {
+  @apply bg-linear-to-br from-brand-light via-brand-primary to-brand-deep;
+}
