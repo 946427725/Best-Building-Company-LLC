@@ -22,10 +22,14 @@ export function Contact() {
         setStatus('success');
         setFormData({ name: '', phone: '', message: '' });
         setTimeout(() => setStatus('idle'), 5000);
+      } else {
+        setStatus('idle');
+        alert('Xatolik yuz berdi. Iltimos keyinroq qayta urinib ko\'ring.');
       }
     } catch (err) {
       console.error(err);
       setStatus('idle');
+      alert('Tarmoq xatoligi. Iltimos internet aloqasini tekshiring.');
     }
   };
 
