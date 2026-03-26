@@ -1,3 +1,4 @@
+import "dotenv/config";
 import express from "express";
 import path from "path";
 import { createServer as createViteServer } from "vite";
@@ -15,6 +16,12 @@ async function startServer() {
     const botToken = process.env.TELEGRAM_BOT_TOKEN;
     const chatId = process.env.TELEGRAM_CHAT_ID;
 
+    // THIS IS THE DEBUG LOG YOU SHOULD SEE
+    console.log("DEBUG: Environment variables check:", { 
+      hasToken: !!botToken, 
+      hasChatId: !!chatId 
+    });
+
     if (botToken && chatId) {
       const text = `
 🏢 *Yangi so'rov (Best Building)*
@@ -27,7 +34,8 @@ async function startServer() {
       `;
 
       try {
-        await fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
+        console.log("DEBUG: Attempting to send Telegram message...");
+        const response = await fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
@@ -36,9 +44,18 @@ async function startServer() {
             parse_mode: 'Markdown'
           })
         });
+        
+        const result = await response.json();
+        if (!response.ok) {
+          console.error("DEBUG: Telegram API error response:", result);
+        } else {
+          console.log("DEBUG: Telegram message sent successfully!");
+        }
       } catch (error) {
-        console.error("Telegram error:", error);
+        console.error("DEBUG: Fetch error:", error);
       }
+    } else {
+      console.warn("DEBUG: Telegram message skipped because botToken or chatId is missing.");
     }
 
     console.log("Contact form submission:", { name, phone, message });
