@@ -14,6 +14,9 @@ export default async function handler(
   const chatId = process.env.TELEGRAM_CHAT_ID;
 
   if (botToken && chatId) {
+    const now = new Date();
+    const uzTime = now.toLocaleString('uz-UZ', { timeZone: 'Asia/Tashkent' });
+
     const text = `
 🏢 *Yangi so'rov (Best Building)*
 ━━━━━━━━━━━━━━━━━━━━
@@ -21,7 +24,7 @@ export default async function handler(
 📞 *Tel:* ${phone}
 💬 *Xabar:* ${message || 'Xabar qoldirilmagan'}
 ━━━━━━━━━━━━━━━━━━━━
-📅 *Sana:* ${new Date().toLocaleString('uz-UZ')}
+📅 *Sana:* ${uzTime}
     `;
 
     try {
