@@ -110,6 +110,57 @@ const resources = {
       },
       contactWidget: {
         tooltip: "Savollaringiz bormi? Biz sizga 27 soniyada qo'ng'iroq qilamiz!",
+      },
+      privacyPolicy: {
+        title: 'Maxfiylik siyosati',
+        lastUpdated: 'Oxirgi yangilanish: 27-mart, 2026',
+        intro: 'Kirish',
+        introDesc: 'Best Building Company LLC kompaniyasida biz sizning maxfiyligingizni hurmat qilamiz va shaxsiy ma\'lumotlaringizni himoya qilishga intilamiz. Ushbu maxfiylik siyosati bizning veb-saytimizga tashrif buyurganingizda shaxsiy ma\'lumotlaringizga qanday munosabatda bo\'lishimiz haqida ma\'lumot beradi.',
+        dataCollect: 'Biz qanday ma\'lumotlarni yig\'amiz',
+        dataCollectDesc: 'Biz siz haqingizda quyidagi turdagi shaxsiy ma\'lumotlarni yig\'ishimiz, foydalanishimiz va saqlashimiz mumkin:',
+        dataTypes: [
+          'Identifikatsiya ma\'lumotlari: ism, familiya.',
+          'Aloqa ma\'lumotlari: elektron pochta manzili va telefon raqamlari.',
+          'So\'rov ma\'lumotlari: sizni qiziqtirgan ob\'ektlar yoki xizmatlar haqida ma\'lumotlar.',
+          'Texnik ma\'lumotlar: IP-manzil, brauzer turi va versiyasi, vaqt zonasi sozlamalari.'
+        ],
+        howUse: 'Ma\'lumotlardan qanday foydalanamiz',
+        howUseDesc: 'Biz sizning shaxsiy ma\'lumotlaringizdan faqat qonun ruxsat bergan hollarda foydalanamiz:',
+        useTypes: [
+          'Ko\'chmas mulk loyihalarimiz bo\'yicha so\'rovlaringiz yuzasidan siz bilan bog\'lanish uchun.',
+          'Siz so\'ragan ma\'lumotlar, mahsulotlar yoki xizmatlarni taqdim etish uchun.',
+          'Veb-saytimizni, mahsulotlarimizni/xizmatlarimizni va marketingimizni yaxshilash uchun.',
+          'Xizmatimizdagi o\'zgarishlar haqida sizni xabardor qilish uchun.'
+        ],
+        thirdParty: 'Uchinchi tomon xizmatlari',
+        thirdPartyDesc: 'Veb-saytimiz so\'rovlar haqida tezkor xabarnoma olish uchun Telegram kabi uchinchi tomon xizmatlari bilan integratsiyalashgan. Ma\'lumotlaringizni uchinchi tomonlarga sotmaymiz.',
+        contactUs: 'Biz bilan bog\'lanish',
+        contactUsDesc: 'Ushbu maxfiylik siyosati bo\'yicha savollaringiz bo\'lsa, biz bilan bog\'laning:'
+      },
+      termsOfService: {
+        title: 'Xizmat ko\'rsatish shartlari',
+        lastUpdated: 'Oxirgi yangilanish: 27-mart, 2026',
+        intro: 'Kirish',
+        introDesc: 'Best Building Company LLC veb-saytiga xush kelibsiz. Ushbu shartlar bestbuilding.uz manzilida joylashgan veb-saytdan foydalanish qoidalarini belgilaydi. Veb-saytga kirish orqali siz ushbu shartlarni qabul qilgan hisoblanasiz.',
+        userResp: 'Foydalanuvchi mas\'uliyati',
+        userRespDesc: 'Ushbu veb-sayt foydalanuvchisi sifatida siz quyidagilarga rozilik bildirasiz:',
+        respList: [
+          'So\'rov yuborishda aniq va to\'liq ma\'lumot taqdim etish.',
+          'Veb-saytdan noqonuniy maqsadlarda foydalanmaslik.',
+          'Veb-saytning biron bir qismiga ruxsatsiz kirishga urinmaslik.',
+          'Tijorat maqsadlarida ma\'lumotlarni yig\'ish uchun avtomatlashtirilgan tizimlardan foydalanmaslik.'
+        ],
+        disclaimer: 'Ko\'chmas mulk ro\'yxati bo\'yicha ogohlantirish',
+        disclaimerDesc: 'Biz veb-saytdagi barcha ma\'lumotlarni aniq va dolzarb saqlashga harakat qilamiz. Biroq:',
+        disclaimerList: [
+          'Ob\'ektlarning mavjudligi, narxi va xususiyatlari ogohlantirishsiz o\'zgarishi mumkin.',
+          'Barcha vizual tasvirlar, jumladan 3D modellar va renderlar faqat tasvirlash maqsadida berilgan va yakuniy mahsulotdan farq qilishi mumkin.',
+          'Veb-saytdagi ma\'lumotlar rasmiy taklif yoki shartnoma hisoblanmaydi.'
+        ],
+        liability: 'Mas\'uliyatni cheklash',
+        liabilityDesc: 'Hech qanday holatda Best Building Company LLC ushbu veb-saytdan foydalanishingiz natijasida yuzaga keladigan bilvosita yoki tasodifiy zararlar uchun javobgar bo\'lmaydi.',
+        contactInfo: 'Aloqa ma\'lumotlari',
+        contactInfoDesc: 'Ushbu xizmat ko\'rsatish shartlari bo\'yicha savollaringiz bo\'lsa, biz bilan bog\'laning:'
       }
     }
   },
@@ -220,6 +271,57 @@ const resources = {
       },
       contactWidget: {
         tooltip: "Есть вопросы? Мы перезвоним вам за 27 секунд!",
+      },
+      privacyPolicy: {
+        title: 'Политика конфиденциальности',
+        lastUpdated: 'Последнее обновление: 27 марта 2026 г.',
+        intro: 'Введение',
+        introDesc: 'В Best Building Company LLC мы уважаем вашу конфиденциальность и стремимся защищать ваши персональные данные. Эта политика конфиденциальности проинформирует вас о том, как мы обрабатываем ваши данные при посещении нашего сайта.',
+        dataCollect: 'Какие данные мы собираем',
+        dataCollectDesc: 'Мы можем собирать, использовать и хранить следующие виды персональных данных:',
+        dataTypes: [
+          'Идентификационные данные: имя, фамилия.',
+          'Контактные данные: адрес электронной почты и номера телефонов.',
+          'Данные запроса: сведения об объектах или услугах, которые вас интересуют.',
+          'Технические данные: IP-адрес, тип и версия браузера, настройки часового пояса.'
+        ],
+        howUse: 'Как мы используем ваши данные',
+        howUseDesc: 'Мы будем использовать ваши персональные данные только в тех случаях, когда это разрешено законом:',
+        useTypes: [
+          'Для связи с вами по поводу ваших запросов о наших проектах недвижимости.',
+          'Для предоставления вам информации, продуктов или услуг, которые вы запрашиваете.',
+          'Для улучшения нашего веб-сайта, продуктов/услуг и маркетинга.',
+          'Для уведомления вас об изменениях в нашем сервисе.'
+        ],
+        thirdParty: 'Сторонние сервисы',
+        thirdPartyDesc: 'Наш веб-сайт интегрирован со сторонними сервисами, такими как Telegram, для мгновенного уведомления о запросах. Мы не продаем ваши данные третьим лицам.',
+        contactUs: 'Связаться с нами',
+        contactUsDesc: 'Если у вас есть вопросы по этой политике конфиденциальности, свяжитесь с нами:'
+      },
+      termsOfService: {
+        title: 'Условия обслуживания',
+        lastUpdated: 'Последнее обновление: 27 марта 2026 г.',
+        intro: 'Введение',
+        introDesc: 'Добро пожаловать в Best Building Company LLC. Эти условия определяют правила использования веб-сайта Best Building Company LLC, расположенного по адресу bestbuilding.uz.',
+        userResp: 'Обязанности пользователя',
+        userRespDesc: 'Как пользователь этого сайта, вы соглашаетесь:',
+        respList: [
+          'Предоставлять точную и полную информацию при отправке запросов.',
+          'Не использовать сайт в незаконных целях.',
+          'Не пытаться получить несанкционированный доступ к любой части сайта.',
+          'Не использовать автоматизированные системы для сбора данных с этого сайта.'
+        ],
+        disclaimer: 'Отказ от ответственности по объектам',
+        disclaimerDesc: 'Мы стараемся поддерживать точность всей информации на сайте. Однако:',
+        disclaimerList: [
+          'Наличие объектов, цены и характеристики могут быть изменены без предварительного уведомления.',
+          'Все визуальные представления, включая 3D-модели, предназначены только для иллюстрации и могут отличаться от конечного продукта.',
+          'Информация на сайте не является официальным предложением или контрактом.'
+        ],
+        liability: 'Ограничение ответственности',
+        liabilityDesc: 'Ни при каких обстоятельствах Best Building Company LLC не несет ответственности за любые косвенные или случайные убытки, возникшие в результате использования вами этого сайта.',
+        contactInfo: 'Контактная информация',
+        contactInfoDesc: 'Если у вас есть вопросы по этим условиям обслуживания, свяжитесь с нами:'
       }
     }
   },
@@ -330,6 +432,57 @@ const resources = {
       },
       contactWidget: {
         tooltip: "Have questions? We will call you back in 27 seconds!",
+      },
+      privacyPolicy: {
+        title: 'Privacy Policy',
+        lastUpdated: 'Last updated: March 27, 2026',
+        intro: 'Introduction',
+        introDesc: 'At Best Building Company LLC, we respect your privacy and are committed to protecting your personal data. This privacy policy will inform you as to how we look after your personal data when you visit our website.',
+        dataCollect: 'What Data We Collect',
+        dataCollectDesc: 'We may collect, use, store and transfer different kinds of personal data about you which we have grouped together as follows:',
+        dataTypes: [
+          'Identity Data: includes first name, last name.',
+          'Contact Data: includes email address and telephone numbers.',
+          'Inquiry Data: includes details about the properties or services you are interested in.',
+          'Technical Data: includes IP address, browser type and version, time zone setting.'
+        ],
+        howUse: 'How We Use Your Data',
+        howUseDesc: 'We will only use your personal data when the law allows us to. Most commonly, we will use your personal data in the following circumstances:',
+        useTypes: [
+          'To contact you regarding your inquiries about our real estate projects.',
+          'To provide you with information, products or services that you request from us.',
+          'To improve our website, products/services, marketing or customer relationships.',
+          'To notify you about changes to our service.'
+        ],
+        thirdParty: 'Third-Party Services',
+        thirdPartyDesc: 'Our website integrates with third-party services such as Telegram for instant inquiry notifications. We do not sell your data to third parties.',
+        contactUs: 'Contact Us',
+        contactUsDesc: 'If you have any questions about this privacy policy or our privacy practices, please contact us at:'
+      },
+      termsOfService: {
+        title: 'Terms of Service',
+        lastUpdated: 'Last updated: March 27, 2026',
+        intro: 'Introduction',
+        introDesc: 'Welcome to Best Building Company LLC. These terms and conditions outline the rules and regulations for the use of Best Building Company LLC\'s Website, located at bestbuilding.uz.',
+        userResp: 'User Responsibilities',
+        userRespDesc: 'As a user of this website, you agree to:',
+        respList: [
+          'Provide accurate and complete information when submitting inquiries.',
+          'Not use the website for any unlawful purpose.',
+          'Not attempt to gain unauthorized access to any portion of the website.',
+          'Not use any automated systems or software to extract data from this website.'
+        ],
+        disclaimer: 'Disclaimer about Property Listings',
+        disclaimerDesc: 'Best Building Company LLC strives to keep all information on this website accurate and up-to-date. However:',
+        disclaimerList: [
+          'Property availability, pricing, and specifications are subject to change without notice.',
+          'All visual representations, including 3D models, are for illustrative purposes only and may differ from the final product.',
+          'Information provided on this website does not constitute a formal offer or contract.'
+        ],
+        liability: 'Limitation of Liability',
+        liabilityDesc: 'In no event shall Best Building Company LLC be held liable for anything arising out of or in any way connected with your use of this website.',
+        contactInfo: 'Contact Information',
+        contactInfoDesc: 'If you have any questions about these Terms of Service, please contact us at:'
       }
     }
   }
