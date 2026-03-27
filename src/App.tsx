@@ -9,6 +9,8 @@ import { About } from './pages/About';
 import { Projects } from './pages/Projects';
 import { Progress } from './pages/Progress';
 import { Contact } from './pages/Contact';
+import { PrivacyPolicy } from './pages/PrivacyPolicy';
+import { TermsOfService } from './pages/TermsOfService';
 import { ContactWidget } from './components/ContactWidget';
 import './i18n';
 
@@ -39,6 +41,8 @@ function App() {
           <Route path="/projects" element={<><Projects /><Footer /></>} />
           <Route path="/progress" element={<><Progress /><Footer /></>} />
           <Route path="/contact" element={<><Contact /><Footer /></>} />
+          <Route path="/privacy-policy" element={<><PrivacyPolicy /><Footer /></>} />
+          <Route path="/terms-of-service" element={<><TermsOfService /><Footer /></>} />
         </Routes>
       </main>
       <ContactWidget />
@@ -54,7 +58,7 @@ function Footer() {
         <div className="md:col-span-2">
           <div className="flex items-center gap-3 mb-8">
             <img 
-              src="https://i.postimg.cc/9QsLPhwq/logo.jpg" 
+              src="/logo.png" 
               alt="Best Building Logo" 
               className="w-14 h-14 object-contain"
               referrerPolicy="no-referrer"
@@ -106,7 +110,7 @@ function Footer() {
           <ul className="space-y-5 text-brand-navy/70 font-bold">
             <li className="flex flex-col gap-1">
               <span className="text-[10px] uppercase opacity-40 tracking-widest">Phone</span>
-              <a href="tel:+998901234567" className="hover:text-brand-primary transition-colors">+998 90 123 45 67</a>
+              <a href="tel:+998781137670" className="hover:text-brand-primary transition-colors">+998 78-113-76-70</a>
             </li>
             <li className="flex flex-col gap-1">
               <span className="text-[10px] uppercase opacity-40 tracking-widest">Email</span>
@@ -114,7 +118,7 @@ function Footer() {
             </li>
             <li className="flex flex-col gap-1">
               <span className="text-[10px] uppercase opacity-40 tracking-widest">Address</span>
-              <span>Toshkent, Yakkasaray tumani</span>
+              <span>Toshkent, Yakkasaray tumani, Shota Rustaveli ko'chasi 126-uy</span>
             </li>
           </ul>
         </div>
@@ -122,8 +126,8 @@ function Footer() {
       <div className="max-w-7xl mx-auto mt-20 pt-10 border-t border-brand-navy/5 flex flex-col md:flex-row justify-between items-center gap-6 text-[10px] font-black opacity-40 uppercase tracking-[0.2em]">
         <p>© 2026 Best Building Company LLC. All rights reserved.</p>
         <div className="flex gap-8">
-          <a href="#" className="hover:text-brand-primary transition-colors">Privacy Policy</a>
-          <a href="#" className="hover:text-brand-primary transition-colors">Terms of Service</a>
+          <Link to="/privacy-policy" className="hover:text-brand-primary transition-colors">Privacy Policy</Link>
+          <Link to="/terms-of-service" className="hover:text-brand-primary transition-colors">Terms of Service</Link>
         </div>
       </div>
     </footer>
