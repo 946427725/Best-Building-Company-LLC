@@ -45,9 +45,9 @@ export function Contact() {
 
             <div className="space-y-8">
               {[
-                { icon: Phone, title: t('footer.contact'), content: ['+998 90 123 45 67', '+998 71 200 00 00'] },
-                { icon: Mail, title: 'Email', content: ['info@bestbuilding.uz', 'sales@bestbuilding.uz'] },
-                { icon: MapPin, title: t('whyUs.location').split(' — ')[0], content: ["Toshkent sh., Yakkasaray tumani, Shota Rustaveli ko'chasi, 45-uy"] },
+                { icon: Phone, title: t('footer.contact'), content: ['+998 78-113-76-70'] },
+                { icon: Mail, title: 'Email', content: ['info@bestbuilding.uz'] },
+                { icon: MapPin, title: t('whyUs.location').split(' — ')[0], content: ["Toshkent, Yakkasaray tumani, Shota Rustaveli ko'chasi 126-uy"] },
               ].map((item, i) => (
                 <motion.div 
                   key={i} 
