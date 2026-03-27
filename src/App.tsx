@@ -58,7 +58,7 @@ function Footer() {
         <div className="md:col-span-2">
           <div className="flex items-center gap-3 mb-8">
             <img 
-              src="/logo.png" 
+              src="https://i.postimg.cc/9QsLPhwq/logo.jpg" 
               alt="Best Building Logo" 
               className="w-14 h-14 object-contain"
               referrerPolicy="no-referrer"
