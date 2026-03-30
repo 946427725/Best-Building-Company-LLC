@@ -4,6 +4,7 @@ import { useScroll } from 'motion/react';
 import { useTranslation } from 'react-i18next';
 import { Instagram, Facebook, Send } from 'lucide-react';
 import { Header } from './components/Header';
+import { ScrollToTop } from './components/ScrollToTop';
 import { Home } from './pages/Home';
 import { About } from './pages/About';
 import { Projects } from './pages/Projects';
@@ -27,6 +28,7 @@ function App() {
 
   return (
     <div className="min-h-screen font-sans selection:bg-brand-primary selection:text-white">
+      <ScrollToTop />
       <Header />
       
       <main>
